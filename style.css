@@ -1,0 +1,145 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 50px;
+    background-color: black;
+    color: white;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 12px;
+}
+
+.img-box {
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.img-box img {
+
+    height: 200px;
+    cursor: pointer;
+}
+
+.img-box img:hover {
+    opacity: 0.7;
+}
+
+.d-none {
+    display: none;
+}
+
+.blackbox {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-big {
+    height: 500px;
+
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.arrow-right {
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+
+.arrow-left {
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+
+@media(max-width: 1250px) {
+    .img-big {
+        height: 400px;
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .img-big {
+        height: 300px;
+    }
+}
+
+@media(max-width: 780px) {
+    .img-big {
+        height: 250px;
+    }
+}
+
+@media(max-width: 660px) {
+    .img-big {
+        height: 200px;
+    }
+}
+
+@media(max-width: 550px) {
+    .img-big {
+        height: 150px;
+    }
+
+    .img-box img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .header {
+        gap: 25px;
+    }
+
+    .img-box img {
+        height: 110px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .img-big {
+        height: 110px;
+    }
+}
+
+@media(max-width: 330px) {
+    .img-big {
+        height: 80px;
+    }
+}
